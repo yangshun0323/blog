@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Jetbrains 全家桶服务器激活</title>
+      <link href="/2022/06/07/jetbrains/"/>
+      <url>/2022/06/07/jetbrains/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Jetbrains-全家桶服务器激活"><a href="#Jetbrains-全家桶服务器激活" class="headerlink" title="Jetbrains 全家桶服务器激活"></a>Jetbrains 全家桶服务器激活</h1><ol><li><p>首先打开这个网站：<a href="https://search.censys.io/">https://search.censys.io/</a>   </p><p> 或者直接打开 <a href="https://search.censys.io/search?resource=hosts&amp;sort=RELEVANCE&amp;per_page=25&amp;virtual_hosts=EXCLUDE&amp;q=services.http.response.headers.location:+account.jetbrains.com/fls-auth/">https://search.censys.io/search?resource=hosts&amp;sort=RELEVANCE&amp;per_page=25&amp;virtual_hosts=EXCLUDE&amp;q=services.http.response.headers.location%3A+account.jetbrains.com%2Ffls-auth/</a></p></li><li><p>然后在搜索框中输入：services.http.response.headers.location: account.jetbrains.com/fls-auth，点击搜索，网站会检索出很多 IP 地址</p></li><li><p>任意点一个 IP 地址查看详情页，确保80/HTTP地址下的Status Code状态码为302，这时候复制出Detail这里的 IP 地址，作为我们的 License Server 地址</p><img src="https://fastly.jsdelivr.net/gh/openHacking/static-files@main/uPic/eKrOrk.png"></li><li><p>输入地址后点击激活</p><img src="https://fastly.jsdelivr.net/gh/openHacking/static-files@main/uPic/HSziOB.png"></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Jetbrains </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Jetbrains </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Redis</title>
+      <link href="/2022/01/15/redis/"/>
+      <url>/2022/01/15/redis/</url>
+      
+        <content type="html"><![CDATA[<p><strong>启动redis (指定配置文件运行)</strong></p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./redis-server   ./redis.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>查看redis运行状态、进程</strong></p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ps -ef | grep redis<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>连接redis</strong></p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./redis-cli -h 127.0.0.1 -p 6379<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>选中第N个库</strong></p><p>选中第二个库</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">select 2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>给第二个库插入一个key=name ,value=张三</p><pre class="line-numbers language-none"><code class="language-none">set name 张三<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://s2.loli.net/2022/01/15/Kqkxo2dGLmgyhwP.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nginx 常用命令及配置</title>
+      <link href="/2022/01/12/nginx-code/"/>
+      <url>/2022/01/12/nginx-code/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows下Nginx的启动、停止、重启等命令"><a href="#Windows下Nginx的启动、停止、重启等命令" class="headerlink" title="Windows下Nginx的启动、停止、重启等命令"></a>Windows下Nginx的启动、停止、重启等命令</h1><p><strong>1、启动：</strong> </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">start nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>2、停止：</strong> </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">nginx.exe -s stop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>或者</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">nginx.exe -s quit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>3、重新载入Nginx：</strong> </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">nginx.exe -s reload<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>4、重新打开日志文件：</strong> </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">nginx.exe -s reopen<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="常用配置"><a href="#常用配置" class="headerlink" title="常用配置"></a>常用配置</h1><p><strong>1.反向代理配置端口</strong></p><pre class="line-numbers language-none"><code class="language-none"># 配置 只有xxx.xxx.com  域名访问 80端口 ，反向代理到 本机的81端口。server {        listen       80;    server_name  xxx.xxx.com;    location / {    proxy_pass http://127.0.0.1:81;    index  index.html index.htm index.jsp;    }}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>2、SSL证书配置</strong></p><pre class="line-numbers language-none"><code class="language-none">  server {      listen       443 ssl;      server_name  xxx.xxx.com;ssl_certificate cert/xxx-xxx.com.pem;ssl_certificate_key cert/xxx-xxx.com.key;ssl_session_cache    shared:SSL:1m;ssl_session_timeout  5m;ssl_ciphers  ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;ssl_prefer_server_ciphers  on;ssl_protocols TLSv1 TLSv1.1 TLSv1.2;   location / {  proxy_http_version 1.1;proxy_set_header Host $host:443;          proxy_set_header X-Forwarded-For $remote_addr;proxy_set_header X-Forwarded-Scheme $scheme;proxy_set_header X-Forwarded-Proto  $scheme;          proxy_pass http://127.0.0.1;      }  }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>3、配置文件目录映射</strong></p><pre class="line-numbers language-none"><code class="language-none">server {           listen       80;       server_name  xxx.xxxx.com;       location / {root H:/public-list/; # H:/public-list/ 指定实际目录绝对路径autoindex on; # 开启目录浏览功能autoindex_exact_size on;  # 显示出文件的确切大小，单位是bytesautoindex_localtime on;  # 显示的文件时间为文件的服务器时间}   }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Nginx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux文档</title>
+      <link href="/2022/01/07/linux-doc/"/>
+      <url>/2022/01/07/linux-doc/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux-中常用的命令"><a href="#Linux-中常用的命令" class="headerlink" title="Linux 中常用的命令"></a>Linux 中常用的命令</h1><p><strong>查看实时日志(滚动日志)</strong></p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">tail</span> -f path/test.log<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>**也可以使用匹配想要的log信息 **</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">tail</span> -f path/test.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'RE expression'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h5 id=""><a href="#" class="headerlink" title=""></a></h5>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown</title>
+      <link href="/2022/01/07/markdown/"/>
+      <url>/2022/01/07/markdown/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://markdown.com.cn/intro.html" title="markdown官网">访问markdown官网</a></p><iframe style="width:100%;height:700px;" frameborder="no" allowtransparency="yes" src="https://markdown.com.cn/basic-syntax/headings.html"></iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git常用命令</title>
+      <link href="/2022/01/07/git-code/"/>
+      <url>/2022/01/07/git-code/</url>
+      
+        <content type="html"><![CDATA[<p>本篇将为大家分享Git一些常用的命令<br><img src="https://www.runoob.com/wp-content/uploads/2015/02/011500266295799.jpg"></p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git init                                                  # 初始化本地git仓库（创建新仓库）git config --global user.name <span class="token string">"xxx"</span>                       # 配置用户名git config --global user.email <span class="token string">"xxx@xxx.com"</span>              # 配置邮件git config --global color.ui true                         # git status等命令自动着色git config --global color.status autogit config --global color.diff autogit config --global color.branch autogit config --global color.interactive autogit config --global --unset http.proxy                    # remove  proxy configuration on gitgit clone git+ssh://git@192.168.53.168/VT.git             # clone远程仓库git status                                                # 查看当前版本状态（是否修改）git add xyz                                               # 添加xyz文件至indexgit add .                                                 # 增加当前子目录下所有更改过的文件至indexgit commit -m <span class="token string">'xxx'</span>                                       # 提交git commit --amend -m <span class="token string">'xxx'</span>                               # 合并上一次提交（用于反复修改）git commit -am <span class="token string">'xxx'</span>                                      # 将add和commit合为一步git rm xxx                                                # 删除index中的文件git rm -r *                                               # 递归删除git log                                                   # 显示提交日志git log -1                                                # 显示1行日志 -n为n行git log -5git log --stat                                            # 显示提交日志及相关变动文件git log -p -mgit show dfb02e6e4f2f7b573337763e5c0013802e392818         # 显示某个提交的详细内容git show dfb02                                            # 可只用commitid的前几位git show HEAD                                             # 显示HEAD提交日志git show HEAD^                                            # 显示HEAD的父（上一个版本）的提交日志 ^^为上两个版本 ^5为上5个版本git tag                                                   # 显示已存在的taggit tag -a v2.0 -m <span class="token string">'xxx'</span>                                  # 增加v2.0的taggit show v2.0                                             # 显示v2.0的日志及详细内容git log v2.0                                              # 显示v2.0的日志git diff                                                  # 显示所有未添加至index的变更git diff --cached                                         # 显示所有已添加index但还未commit的变更git diff HEAD^                                            # 比较与上一个版本的差异git diff HEAD -- ./lib                                    # 比较与HEAD版本lib目录的差异git diff origin/master..master                            # 比较远程分支master上有本地分支master上没有的git diff origin/master..master --stat                     # 只显示差异的文件，不显示具体内容git remote add origin git+ssh://git@192.168.53.168/VT.git # 增加远程定义（用于push/pull/fetch）git branch                                                # 显示本地分支git branch --contains 50089                               # 显示包含提交50089的分支git branch -a                                             # 显示所有分支git branch -r                                             # 显示所有原创分支git branch --merged                                       # 显示所有已合并到当前分支的分支git branch --no-merged                                    # 显示所有未合并到当前分支的分支git branch -m master master_copy                          # 本地分支改名git checkout -b master_copy                               # 从当前分支创建新分支master_copy并检出git checkout -b master master_copy                        # 上面的完整版git checkout features/performance                         # 检出已存在的features/performance分支git checkout --track hotfixes/BJVEP933                    # 检出远程分支hotfixes/BJVEP933并创建本地跟踪分支git checkout v2.0                                         # 检出版本v2.0git checkout -b devel origin/develop                      # 从远程分支develop创建新本地分支devel并检出git checkout -- README                                    # 检出head版本的README文件（可用于修改错误回退）git merge origin/master                                   # 合并远程master分支至当前分支git cherry-pick ff44785404a8e                             # 合并提交ff44785404a8e的修改git push origin master                                    # 将当前分支push到远程master分支git push origin :hotfixes/BJVEP933                        # 删除远程仓库的hotfixes/BJVEP933分支git push --tags                                           # 把所有tag推送到远程仓库git fetch                                                 # 获取所有远程分支（不更新本地分支，另需merge）git fetch --prune                                         # 获取所有原创分支并清除服务器上已删掉的分支git pull origin master                                    # 获取远程分支master并merge到当前分支git mv README README2                                     # 重命名文件README为README2git reset --hard HEAD                                     # 将当前版本重置为HEAD（通常用于merge失败回退）git rebasegit branch -d hotfixes/BJVEP933                           # 删除分支hotfixes/BJVEP933（本分支修改已合并到其他分支）git branch -D hotfixes/BJVEP933                           # 强制删除分支hotfixes/BJVEP933git ls-files                                              # 列出git index包含的文件git show-branch                                           # 图示当前分支历史git show-branch --all                                     # 图示所有分支历史git whatchanged                                           # 显示提交历史对应的文件修改git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # 撤销提交dfb02e6e4f2f7b573337763e5c0013802e392818git ls-tree HEAD                                          # 内部命令：显示某个git对象git rev-parse v2.0                                        # 内部命令：显示某个ref对于的SHA1 HASHgit reflog                                                # 显示所有提交，包括孤立节点git show HEAD@{5}git show master@{yesterday}                               # 显示master分支昨天的状态git log --pretty=format:<span class="token string">'%h %s'</span> --graph                   # 图示提交日志git show HEAD~3git show -s --pretty=raw 2be7fcb476git stash                                                 # 暂存当前修改，将所有至为HEAD状态git stash list                                            # 查看所有暂存git stash show -p stash@{0}                               # 参考第一次暂存git stash apply stash@{0}                                 # 应用第一次暂存git grep <span class="token string">"delete from"</span>                                    # 文件中搜索文本“delete from”git grep -e <span class="token string">'#define'</span> --and -e SORT_DIRENTgit gcgit fsck<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo介绍</title>
+      <link href="/2022/01/06/hello-world/"/>
+      <url>/2022/01/06/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客管理</title>
+      <link href="/2021/12/31/blog-manage/"/>
+      <url>/2021/12/31/blog-manage/</url>
+      
+        <content type="html"><![CDATA[<h1 id="文章访问加密方法（SHA256-）："><a href="#文章访问加密方法（SHA256-）：" class="headerlink" title="文章访问加密方法（SHA256 ）："></a>文章访问加密方法（SHA256 ）：</h1><script src="https://cdn.bootcdn.net/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script><input id="password" placeholder="请输入要加密的字符"><button onclick="strConvertSha256()">生成SHA256密码</button><input id="sha256" placeholder="生成的密文"><script type="text/javascript">  function strConvertSha256(){    var str = this.document.getElementById("password").value;    this.document.getElementById("sha256").value = sha256(str);  }</script><h1 id="评论系统-Valine-："><a href="#评论系统-Valine-：" class="headerlink" title="评论系统(Valine )："></a>评论系统(<a href="https://console.leancloud.cn/apps/zySaaEBgGPpLXNtHR9Y3wqTt-gzGzoHsz/storage/data/Comment" title="LeanCloud">Valine</a> )：</h1><h1 id="域名平台-freenom-：账号-x35-54-48-64-x67-109-x61-x69-x6c-46-x63-111-x6d-速度较慢-无需梯子"><a href="#域名平台-freenom-：账号-x35-54-48-64-x67-109-x61-x69-x6c-46-x63-111-x6d-速度较慢-无需梯子" class="headerlink" title="域名平台(freenom )：账号:****560@gmail.com  速度较慢 无需梯子"></a>域名平台(<a href="https://www.freenom.com/zh/index.html?lang=zh" title="freenom">freenom</a> )：账号:****<a href="mailto:560@gmail.com">560@gmail.com</a>  速度较慢 无需梯子</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

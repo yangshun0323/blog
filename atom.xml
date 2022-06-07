@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一昂的博客</title>
+  
+  <subtitle>一昂的博客</subtitle>
+  <link href="https://blog.mulate.cn/atom.xml" rel="self"/>
+  
+  <link href="https://blog.mulate.cn/"/>
+  <updated>2022-06-07T12:58:18.326Z</updated>
+  <id>https://blog.mulate.cn/</id>
+  
+  <author>
+    <name>Yang Shun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jetbrains 全家桶服务器激活</title>
+    <link href="https://blog.mulate.cn/2022/06/07/jetbrains/"/>
+    <id>https://blog.mulate.cn/2022/06/07/jetbrains/</id>
+    <published>2022-06-07T12:16:12.376Z</published>
+    <updated>2022-06-07T12:58:18.326Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Jetbrains-全家桶服务器激活&quot;&gt;&lt;a href=&quot;#Jetbrains-全家桶服务器激活&quot; class=&quot;headerlink&quot; title=&quot;Jetbrains 全家桶服务器激活&quot;&gt;&lt;/a&gt;Jetbrains</summary>
+        
+      
+    
+    
+    
+    <category term="Jetbrains" scheme="https://blog.mulate.cn/categories/Jetbrains/"/>
+    
+    
+    <category term="Jetbrains" scheme="https://blog.mulate.cn/tags/Jetbrains/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis</title>
+    <link href="https://blog.mulate.cn/2022/01/15/redis/"/>
+    <id>https://blog.mulate.cn/2022/01/15/redis/</id>
+    <published>2022-01-15T14:11:45.614Z</published>
+    <updated>2022-01-15T16:16:08.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;启动redis (指定配置文件运行)&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://blog.mulate.cn/categories/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://blog.mulate.cn/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx 常用命令及配置</title>
+    <link href="https://blog.mulate.cn/2022/01/12/nginx-code/"/>
+    <id>https://blog.mulate.cn/2022/01/12/nginx-code/</id>
+    <published>2022-01-12T09:20:37.613Z</published>
+    <updated>2022-01-15T05:55:44.726Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Windows下Nginx的启动、停止、重启等命令&quot;&gt;&lt;a href=&quot;#Windows下Nginx的启动、停止、重启等命令&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Nginx" scheme="https://blog.mulate.cn/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://blog.mulate.cn/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux文档</title>
+    <link href="https://blog.mulate.cn/2022/01/07/linux-doc/"/>
+    <id>https://blog.mulate.cn/2022/01/07/linux-doc/</id>
+    <published>2022-01-07T14:32:46.638Z</published>
+    <updated>2022-01-15T12:56:57.015Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux-中常用的命令&quot;&gt;&lt;a href=&quot;#Linux-中常用的命令&quot; class=&quot;headerlink&quot; title=&quot;Linux 中常用的命令&quot;&gt;&lt;/a&gt;Linux</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blog.mulate.cn/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.mulate.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown</title>
+    <link href="https://blog.mulate.cn/2022/01/07/markdown/"/>
+    <id>https://blog.mulate.cn/2022/01/07/markdown/</id>
+    <published>2022-01-07T11:46:40.420Z</published>
+    <updated>2022-01-07T12:01:11.741Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://markdown.com.cn/intro.html&quot; title=&quot;markdown官网&quot;&gt;访问markdown官网&lt;/a&gt;&lt;/p&gt;
+&lt;iframe style=&quot;width:100%;height:700px;&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://blog.mulate.cn/categories/Markdown/"/>
+    
+    
+    <category term="Markdown" scheme="https://blog.mulate.cn/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用命令</title>
+    <link href="https://blog.mulate.cn/2022/01/07/git-code/"/>
+    <id>https://blog.mulate.cn/2022/01/07/git-code/</id>
+    <published>2022-01-07T11:25:27.436Z</published>
+    <updated>2022-01-07T11:43:58.476Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本篇将为大家分享Git一些常用的命令&lt;br&gt;&lt;img src=&quot;https://www.runoob.com/wp-content/uploads/2015/02/011500266295799.jpg&quot;&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://blog.mulate.cn/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://blog.mulate.cn/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo介绍</title>
+    <link href="https://blog.mulate.cn/2022/01/06/hello-world/"/>
+    <id>https://blog.mulate.cn/2022/01/06/hello-world/</id>
+    <published>2022-01-06T11:46:21.830Z</published>
+    <updated>2022-01-08T15:47:09.220Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.mulate.cn/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.mulate.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客管理</title>
+    <link href="https://blog.mulate.cn/2021/12/31/blog-manage/"/>
+    <id>https://blog.mulate.cn/2021/12/31/blog-manage/</id>
+    <published>2021-12-30T16:00:00.000Z</published>
+    <updated>2022-01-12T10:04:46.633Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;文章访问加密方法（SHA256-）：&quot;&gt;&lt;a href=&quot;#文章访问加密方法（SHA256-）：&quot; class=&quot;headerlink&quot; title=&quot;文章访问加密方法（SHA256 ）：&quot;&gt;&lt;/a&gt;文章访问加密方法（SHA256 ）：&lt;/h1&gt;&lt;script</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
