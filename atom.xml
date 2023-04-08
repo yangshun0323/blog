@@ -3,11 +3,11 @@
   <title>一昂的博客</title>
   
   <subtitle>一昂的博客</subtitle>
-  <link href="https://blog.shun.ml/atom.xml" rel="self"/>
+  <link href="https://blog.meng1122.xyz/atom.xml" rel="self"/>
   
-  <link href="https://blog.shun.ml/"/>
-  <updated>2022-06-07T12:58:18.326Z</updated>
-  <id>https://blog.shun.ml/</id>
+  <link href="https://blog.meng1122.xyz/"/>
+  <updated>2023-04-08T16:11:54.368Z</updated>
+  <id>https://blog.meng1122.xyz/</id>
   
   <author>
     <name>Yang Shun</name>
@@ -17,9 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>聚合短视频解析去水印</title>
+    <link href="https://blog.meng1122.xyz/2023/04/08/qushuiyin/"/>
+    <id>https://blog.meng1122.xyz/2023/04/08/qushuiyin/</id>
+    <published>2023-04-08T14:33:17.946Z</published>
+    <updated>2023-04-08T16:11:54.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;目前支持：皮皮虾-抖音-微视-快手-6间房-哔哩哔哩-微博-绿洲-度小视-开眼-陌陌-皮皮搞笑-全民k歌-逗拍-虎牙-新片场-哔哩哔哩-Acfun-美拍-西瓜视频-火山小视频-网易云Mlog-好看视频&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="短视频" scheme="https://blog.meng1122.xyz/categories/%E7%9F%AD%E8%A7%86%E9%A2%91/"/>
+    
+    
+    <category term="短视频" scheme="https://blog.meng1122.xyz/tags/%E7%9F%AD%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Jetbrains 全家桶服务器激活</title>
-    <link href="https://blog.shun.ml/2022/06/07/jetbrains/"/>
-    <id>https://blog.shun.ml/2022/06/07/jetbrains/</id>
+    <link href="https://blog.meng1122.xyz/2022/06/07/jetbrains/"/>
+    <id>https://blog.meng1122.xyz/2022/06/07/jetbrains/</id>
     <published>2022-06-07T12:16:12.376Z</published>
     <updated>2022-06-07T12:58:18.326Z</updated>
     
@@ -34,17 +59,17 @@
     
     
     
-    <category term="Jetbrains" scheme="https://blog.shun.ml/categories/Jetbrains/"/>
+    <category term="Jetbrains" scheme="https://blog.meng1122.xyz/categories/Jetbrains/"/>
     
     
-    <category term="Jetbrains" scheme="https://blog.shun.ml/tags/Jetbrains/"/>
+    <category term="Jetbrains" scheme="https://blog.meng1122.xyz/tags/Jetbrains/"/>
     
   </entry>
   
   <entry>
     <title>Redis</title>
-    <link href="https://blog.shun.ml/2022/01/15/redis/"/>
-    <id>https://blog.shun.ml/2022/01/15/redis/</id>
+    <link href="https://blog.meng1122.xyz/2022/01/15/redis/"/>
+    <id>https://blog.meng1122.xyz/2022/01/15/redis/</id>
     <published>2022-01-15T14:11:45.614Z</published>
     <updated>2022-01-15T16:16:08.545Z</updated>
     
@@ -60,17 +85,17 @@
     
     
     
-    <category term="Redis" scheme="https://blog.shun.ml/categories/Redis/"/>
+    <category term="Redis" scheme="https://blog.meng1122.xyz/categories/Redis/"/>
     
     
-    <category term="Redis" scheme="https://blog.shun.ml/tags/Redis/"/>
+    <category term="Redis" scheme="https://blog.meng1122.xyz/tags/Redis/"/>
     
   </entry>
   
   <entry>
     <title>nginx 常用命令及配置</title>
-    <link href="https://blog.shun.ml/2022/01/12/nginx-code/"/>
-    <id>https://blog.shun.ml/2022/01/12/nginx-code/</id>
+    <link href="https://blog.meng1122.xyz/2022/01/12/nginx-code/"/>
+    <id>https://blog.meng1122.xyz/2022/01/12/nginx-code/</id>
     <published>2022-01-12T09:20:37.613Z</published>
     <updated>2022-01-15T05:55:44.726Z</updated>
     
@@ -85,17 +110,17 @@
     
     
     
-    <category term="Nginx" scheme="https://blog.shun.ml/categories/Nginx/"/>
+    <category term="Nginx" scheme="https://blog.meng1122.xyz/categories/Nginx/"/>
     
     
-    <category term="Nginx" scheme="https://blog.shun.ml/tags/Nginx/"/>
+    <category term="Nginx" scheme="https://blog.meng1122.xyz/tags/Nginx/"/>
     
   </entry>
   
   <entry>
     <title>Linux文档</title>
-    <link href="https://blog.shun.ml/2022/01/07/linux-doc/"/>
-    <id>https://blog.shun.ml/2022/01/07/linux-doc/</id>
+    <link href="https://blog.meng1122.xyz/2022/01/07/linux-doc/"/>
+    <id>https://blog.meng1122.xyz/2022/01/07/linux-doc/</id>
     <published>2022-01-07T14:32:46.638Z</published>
     <updated>2022-01-15T12:56:57.015Z</updated>
     
@@ -110,17 +135,17 @@
     
     
     
-    <category term="Linux" scheme="https://blog.shun.ml/categories/Linux/"/>
+    <category term="Linux" scheme="https://blog.meng1122.xyz/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://blog.shun.ml/tags/Linux/"/>
+    <category term="Linux" scheme="https://blog.meng1122.xyz/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Markdown</title>
-    <link href="https://blog.shun.ml/2022/01/07/markdown/"/>
-    <id>https://blog.shun.ml/2022/01/07/markdown/</id>
+    <link href="https://blog.meng1122.xyz/2022/01/07/markdown/"/>
+    <id>https://blog.meng1122.xyz/2022/01/07/markdown/</id>
     <published>2022-01-07T11:46:40.420Z</published>
     <updated>2022-01-07T12:01:11.741Z</updated>
     
@@ -136,17 +161,17 @@
     
     
     
-    <category term="Markdown" scheme="https://blog.shun.ml/categories/Markdown/"/>
+    <category term="Markdown" scheme="https://blog.meng1122.xyz/categories/Markdown/"/>
     
     
-    <category term="Markdown" scheme="https://blog.shun.ml/tags/Markdown/"/>
+    <category term="Markdown" scheme="https://blog.meng1122.xyz/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Git常用命令</title>
-    <link href="https://blog.shun.ml/2022/01/07/git-code/"/>
-    <id>https://blog.shun.ml/2022/01/07/git-code/</id>
+    <link href="https://blog.meng1122.xyz/2022/01/07/git-code/"/>
+    <id>https://blog.meng1122.xyz/2022/01/07/git-code/</id>
     <published>2022-01-07T11:25:27.436Z</published>
     <updated>2022-01-07T11:43:58.476Z</updated>
     
@@ -162,17 +187,17 @@
     
     
     
-    <category term="Git" scheme="https://blog.shun.ml/categories/Git/"/>
+    <category term="Git" scheme="https://blog.meng1122.xyz/categories/Git/"/>
     
     
-    <category term="Git" scheme="https://blog.shun.ml/tags/Git/"/>
+    <category term="Git" scheme="https://blog.meng1122.xyz/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Hexo介绍</title>
-    <link href="https://blog.shun.ml/2022/01/06/hello-world/"/>
-    <id>https://blog.shun.ml/2022/01/06/hello-world/</id>
+    <link href="https://blog.meng1122.xyz/2022/01/06/hello-world/"/>
+    <id>https://blog.meng1122.xyz/2022/01/06/hello-world/</id>
     <published>2022-01-06T11:46:21.830Z</published>
     <updated>2022-01-08T15:47:09.220Z</updated>
     
@@ -187,17 +212,17 @@
     
     
     
-    <category term="Hexo" scheme="https://blog.shun.ml/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://blog.meng1122.xyz/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://blog.shun.ml/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://blog.meng1122.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>博客管理</title>
-    <link href="https://blog.shun.ml/2021/12/31/blog-manage/"/>
-    <id>https://blog.shun.ml/2021/12/31/blog-manage/</id>
+    <link href="https://blog.meng1122.xyz/2021/12/31/blog-manage/"/>
+    <id>https://blog.meng1122.xyz/2021/12/31/blog-manage/</id>
     <published>2021-12-30T16:00:00.000Z</published>
     <updated>2023-04-08T13:23:39.755Z</updated>
     
