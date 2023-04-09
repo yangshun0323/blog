@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ChatGPT-AI人机对话</title>
+      <link href="/2023/04/09/chatgpt/"/>
+      <url>/2023/04/09/chatgpt/</url>
+      
+        <content type="html"><![CDATA[<p>会话ID：<span id="sessionid"></span><button onclick="add()">新建聊天</button></p><div style="height: 800px;border: 1px solid;width: 100%;padding: 24px;overflow: auto;" id="response"></div><div>    <input id="problem" placeholder="请输入要提问的问题" style="width: 60%;border: 1px solid;padding: 0 10px;" class="url-inp">    <button onclick="send(event.target)" style="height: 50px;width: 100px;font-size: 23px;" id="sendBtn">发送</button></div><p id="status"></p><script type="text/javascript">    var _sessionid = new Date().getTime();    document.getElementById("sessionid").innerHTML = _sessionid;    // 获取 input 元素      const input = document.getElementById("problem");      // 监听回车事件      input.addEventListener('keydown', function(event) {          if (event.keyCode === 13) {              // 执行回车事件处理函数              document.getElementById("sendBtn").click()         }      });    function send(target) {        var problem = input.value;        if(!problem){            return;        }        target.disabled  = true;        var status = document.getElementById("status");        var response = document.getElementById("response");        input.value ="";        response.innerHTML += `        <div style="clear: both;"><div style=" float: right;max-width: 45%;margin-right: 20px;"><div style="background-color: rgb(210 249 209 / var(--tw-bg-opacity));--tw-bg-opacity: 1;padding: 10px; display: inline-block;">${problem}</div><img style="max-width:24px; " src="https://img1.baidu.com/it/u=3423414161,1594291094&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1681146000&t=1b0535c82b878ef7b7c038ddcda6ab8e" onerror="javascript:this.parentNode.style.display = 'none';"></div>        <br><br><br><br></div>`;        response.scrollTop = response.scrollHeight;        status.innerText = "AI正在思考中...";        fetch("https://cbjtestapi.binjie.site:7777/api/generateStream", {            method: "post",            headers: {                "accept": "application/json, text/plain, */*",                "accept-encoding": "gzip, deflate, br",                "accept-language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",                "content-length": "113",                "content-type": "application/json",                "origin": "https://chat.binjie.site:7777",                "referer": "https://chat.binjie.site:7777/",                "sec-ch-ua": "'Google Chrome';v='111', 'Not(A:Brand';v='8', 'Chromium';v='111'",                "sec-ch-ua-mobile": "?0",                "sec-ch-ua-platform": "Windows",                "sec-fetch-dest": "empty",                "sec-fetch-mode": "cors",                "sec-fetch-site": "same-site",                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"            },            body: JSON.stringify({ "prompt": problem, "userId": "#/chat/" + _sessionid, "network": false, "apikey": "", "system": "", "withoutContext": false })        }).then((res) => {            return res.text();        }).then((res) => {            var aid = new Date().getTime();            response.innerHTML += `           <div style=" float: left;"><img style="max-width:24px;" src="https://favicon.yandex.net/favicon/v2/https://openai.com?size=32" onerror="javascript:this.parentNode.style.display = 'none';"><div style="background-color: rgb(210 249 209 / var(--tw-bg-opacity));--tw-bg-opacity: 1;padding: 10px; display: inline-block;max-width: 45%;margin-left: 30px;    white-space: pre-wrap" id="${aid}"></div></div>            <br><br><br><br>`;            document.getElementById(aid).innerText = res;            response.scrollTop = response.scrollHeight;            status.innerText = "完毕！";        }).finally(()=>{            target.disabled  = false;        });    }    function add() {        _sessionid = new Date().getTime();        document.getElementById("status").innerText = "会话创建成功，会话ID：" + _sessionid;        document.getElementById("sessionid").innerHTML = _sessionid;    }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> ChatGPT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ChatGPT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>聚合短视频解析去水印</title>
       <link href="/2023/04/08/qushuiyin/"/>
       <url>/2023/04/08/qushuiyin/</url>

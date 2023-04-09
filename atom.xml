@@ -6,7 +6,7 @@
   <link href="https://blog.meng1122.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.meng1122.xyz/"/>
-  <updated>2023-04-08T16:11:54.368Z</updated>
+  <updated>2023-04-09T07:06:10.837Z</updated>
   <id>https://blog.meng1122.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ChatGPT-AI人机对话</title>
+    <link href="https://blog.meng1122.xyz/2023/04/09/chatgpt/"/>
+    <id>https://blog.meng1122.xyz/2023/04/09/chatgpt/</id>
+    <published>2023-04-09T04:58:29.467Z</published>
+    <updated>2023-04-09T07:06:10.837Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;会话ID：&lt;span id=&quot;sessionid&quot;&gt;&lt;/span&gt;&lt;button onclick=&quot;add()&quot;&gt;新建聊天&lt;/button&gt;&lt;/p&gt;
+&lt;div style=&quot;height: 800px;border: 1px solid;width:</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://blog.meng1122.xyz/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://blog.meng1122.xyz/tags/ChatGPT/"/>
+    
+  </entry>
   
   <entry>
     <title>聚合短视频解析去水印</title>
