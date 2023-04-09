@@ -6,7 +6,7 @@
   <link href="https://blog.meng1122.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.meng1122.xyz/"/>
-  <updated>2023-04-09T07:06:10.837Z</updated>
+  <updated>2023-04-09T14:35:54.052Z</updated>
   <id>https://blog.meng1122.xyz/</id>
   
   <author>
@@ -21,15 +21,14 @@
     <link href="https://blog.meng1122.xyz/2023/04/09/chatgpt/"/>
     <id>https://blog.meng1122.xyz/2023/04/09/chatgpt/</id>
     <published>2023-04-09T04:58:29.467Z</published>
-    <updated>2023-04-09T07:06:10.837Z</updated>
+    <updated>2023-04-09T14:35:54.052Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;会话ID：&lt;span id=&quot;sessionid&quot;&gt;&lt;/span&gt;&lt;button onclick=&quot;add()&quot;&gt;新建聊天&lt;/button&gt;&lt;/p&gt;
-&lt;div style=&quot;height: 800px;border: 1px solid;width:</summary>
+    <summary type="html">&lt;h1 id=&quot;ChatGPT&quot;&gt;&lt;a href=&quot;#ChatGPT&quot; class=&quot;headerlink&quot; title=&quot;ChatGPT:&quot;&gt;&lt;/a&gt;ChatGPT:&lt;/h1&gt;&lt;script</summary>
         
       
     
