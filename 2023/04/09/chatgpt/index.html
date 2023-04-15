@@ -57,7 +57,7 @@
         }).then((res) => {
             return res.text();
         }).then((res) => {
-            let pattern = /盗版的 GPT-3.5 接口网站|盗用GPT-3.5接口的网站/g;
+            let pattern = /盗版的 GPT-3.5 接口网站|盗用GPT-3.5接口的网站|盗用/g;
             if (pattern.test(res)) {
                 res ="网络错误，请重新尝试。";
             } 
